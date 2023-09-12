@@ -1,18 +1,17 @@
+import { MegjelenitSor } from "./MegjelenitSor.js";
+
 export class Megjelenit {
     #lista = [];
-    constructor(lista, tarolo) {
+    constructor(lista, szuloElem) {
         this.#lista = lista;
-        this.tarolo = tarolo;
-        this.megjelenit();
+        szuloElem.append(`<table class='table table-bordered'><tbody>`);
+        this.tablaElem = szuloElem.children("table");
+        this.tablabaIr();
     }
 
-    megjelenit() {
-        let txt = `<table class='table table-bordered'>
-        <tbody>`;
-        this.#lista.forEach((element) => {
-            txt += `<tr><td>${element}</td></tr>`;
+    tablabaIr() {
+        this.#lista.forEach((elem) => {
+            new MegjelenitSor(elem, this.tablaElem);
         });
-        txt += "</tbody></table>";
-        $(this.tarolo).html(txt);
     }
 }
