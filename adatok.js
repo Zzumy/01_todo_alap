@@ -9,6 +9,7 @@ export const TODOLIST = [
     "dokumentáció",
     "kész szakdolgozat",
 ];
+
 export const TODOLIST2 = [
     {
         tevekenyseg: "szakdolgozat specifikáció elkészítése",
@@ -20,10 +21,10 @@ export const TODOLIST2 = [
     { tevekenyseg: "frontend 80%", hatarido: "2023.02.11" },
     { tevekenyseg: "OSZTV", hatarido: "2023.02.26" },
     { tevekenyseg: "tesztelés, dokumentáció", hatarido: "folyamatosan" },
-   
+
     {
         tevekenyseg: "kész szakdolgozat legalább 99%-os készültséggel",
         hatarido: "2024.03.31",
     },
-    { tevekenyseg: "kész dokumentáció", hatarido: "2024.04.15" }
+    { tevekenyseg: "kész dokumentáció", hatarido: "2024.04.15" },
 ];
